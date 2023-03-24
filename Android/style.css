@@ -14,11 +14,6 @@
     font-style:normal;
 }
 
-* {
-    margin: 0%;
-    padding: 0%;
-}
-
 :root {
     --cor1: #a9f3fe;
     --cor2: #75f5fa;
@@ -38,7 +33,7 @@ body{
 }
 
 main{
-    margin: 20px;
+    margin: 5px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.186);
 }
@@ -106,10 +101,6 @@ aside > .tema-3{
 aside > p{
     font-family:var(--conteudo), Arial, Helvetica, sans-serif;
     font-weight:bold;
-}
-
-img{
-    width: 100%;
 }
 
 video{
