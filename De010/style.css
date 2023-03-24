@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family:'corpo';
+    src: url(fontes/WorkSans-VariableFont_wght.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'temas';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --cor1: #a9f3fe;
+    --cor2: #75f5fa;
+    --cor3: #00ffff;
+    --cor4: #02c7ce;
+    --cor5: #07595c;
+    --cor6: #001a24;
+
+    --conteudo: 'corpo';
+    --destaques: 'temas';
+}
+
+body{
+    background-color:var(--cor1);
+    height: 100%;
+    width:100%;
+}
+
+main{
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.186);
+}
+
+/* style header */
+header{
+    background-image: linear-gradient(to top, var(--cor5), var(--cor3));
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.23);
+}
+
+header > p{
+    font-family: var(--conteudo);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 5px;
+}
+
+h1{
+    font-family:var(--conteudo);
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px 5px;
+}
+
+header > nav > a{
+    text-decoration:none;
+    font-family: var(--conteudo), Arial, Helvetica, sans-serif;
+    color:black;
+    color: rgb(255, 255, 255);
+    padding:5px;
+    
+}
+
+header > nav > a:hover{
+    text-decoration:underline;
+    color:var(--cor3);
+    transition:all 0.3s ease;
+    text-shadow: 0px 2px 8px var(--cor3);
+}
+
+/*style main*/
+main{
+    background-color: white;
+    align-items: center;
+    text-align: center;
+}
+
+aside > .tema-2{
+    color: black;
+    font-family:var(--destaques), Arial, Helvetica, sans-serif;
+    color:var(--cor5);
+    text-align: start;
+    font-size:25px;
+}
+
+aside > .tema-3{
+    color: black;
+    font-family:var(--destaques), Arial, Helvetica, sans-serif;
+    color:var(--cor5);
+    text-align: start;
+    background-image: linear-gradient(to right, var(--cor4), var(--cor2));
+}
+
+aside > p{
+    font-family:var(--conteudo), Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+img{
+    width: 100%;
+}
+
+video{
+    width: 100%;
+}
+
+.aprender-mais{
+    background-color:var(--cor4);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.aprender-mais > h3{
+    font-family:var(--conteudo), Arial, Helvetica, sans-serif;
+    color:rgb(255, 255, 255);
+    background-image:linear-gradient( to top, var(--cor4), var(--cor5));
+    border-radius: 10px;
+   
+}
+
+.aprender-mais{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.23);
+}
+
+.aprender-mais ul{
+    columns: 2;  
+    list-style-position: inside;
+    font-family:'corpo';
+    
+}
+
+ul > div{
+    display:inline-block;
+    font-family: var(--conteudo), Arial, Helvetica, sans-serif;
+}
+
+/* style footer */
+
+footer{
+    background-color: var(--cor6);
+}
+
+footer > p{
+    font-family: var(--conteudo), Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+footer > p > img{
+    width: 15px;
+    height: 15px;
+    
+}
+
+footer > nav > a > img{
+    width: 25px;
+    height: 25px;
+}
+
+footer > nav{
+    border: 1px solid black;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    
+}
+
+footer > nav > a{
+    padding: 10px;
+}
+
+#youtube:hover{
+    box-shadow: 0px 5px 20px rgba(248, 47, 47, 50);
+    transition:all 0.3s ease;
+}
+
+#facebook:hover{
+    box-shadow: 0px 5px 20px var(--cor3);
+    transition:all 0.3s ease;
+}
+
+#instagram:hover{
+    box-shadow: 0px 5px 20px rgba(252, 229, 50, 0.653);
+    transition:all 0.3s ease;
+}
