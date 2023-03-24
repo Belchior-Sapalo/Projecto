@@ -26,6 +26,11 @@
     --destaques: 'temas';
 }
 
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
 body{
     background-color:var(--cor1);
     height: 100%;
@@ -106,6 +111,10 @@ aside > .tema-3{
 aside > p{
     font-family:var(--conteudo), Arial, Helvetica, sans-serif;
     font-weight:bold;
+}
+
+img{
+    width: 100%;
 }
 
 video{
