@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projectos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/Bell-icon.png" type="image/x-icon">
+
+    <style>
+
+        /*--------------- 
+              Fontes
+        -----------------*/
+
+        @font-face{
+            font-family: "corpo";
+            src: url("fontes/WorkSans-VariableFont_wght.ttf") format('truetype');
+            font-weight: normal;
+            font-style: normal;
+    
+             }
+        
+        /*--------------- 
+             Variáveis
+        -----------------*/
+
+        :root{
+           --cor1: #a9f3fe;
+           --cor2: #75f5fa;
+           --cor3: #00ffff;
+           --cor4: #02c7ce;
+           --cor5: #07595c;
+           --cor6: #001a24;
+
+          --conteudo: "corpo";
+          --destaques: "titulos";
+        }
+        
+        main section .div li{
+            list-style: none;
+        }
+
+        main section{
+            margin: 15px;
+            
+        }
+
+        main p{
+            font-family:"corpo";
+            color: rgb(0, 0, 0);
+        }
+
+        main section div.musicas{
+            display: inline-block;
+            width: 40%;
+            text-align: center;
+
+        }
+
+        main section div.musicas img{
+            width: 80%;
+            height: 80%;
+            margin: auto;
+        }
+
+        main section div.musicas a{
+            text-decoration: none;
+            font-family: "corpo";
+            color: black;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        main section div.musicas a:hover{
+            background-color: var(--cor6);
+            color: rgb(255, 255, 255);
+            text-shadow: 0px 0px 50px var(--cor4);
+            font-weight: bolder;
+        }
+
+       
+
+        
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="perfil-artista.html">O artista</a></li>
+            <li><a href="principal.html">Home</a></li>
+            <li><a href="letras.html">Letras</a></li>
+            <li><a href="contactos.html" class="contacto">Contactos</a></li>
+        </ul>
+
+        <article>
+            <ul><li class="imagem"><img src="imagens/Sem título.png" alt="" width=""></li></ul>
+        </article>
+
+    </nav>
+
+    <main>
+        
+        <section>
+            <ul class="div">
+                <li>
+                    <div class="musicas">
+                        <p>Belchior Benilson - <br> Versos da Alma(EP)</p>
+                        <img src="imagens/Versos-da-Alma.jpg" alt="" width="200" height="200" >
+                         <p class="down"><a href="#" target="_blank">DOWNLOAD</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="musicas">
+                        <p>Belchior Benilson - <br> Minha Visão</p>
+                        <img src="imagens/Cover Minha Visão.jpg" alt="" width="200" height="200" >
+                         <p class="down"><a href="#" target="_blank">DOWNLOAD</a></p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+           
+
+    </main>
+
+    <footer>
+
+        <p>Site criado por &copy; Belchior Sapalo</p>
+
+        <ul>
+            <li><a href="#"><img src="imagens/stikers/facebook.png" alt="facebook" width="25px" height="25px"></a></li>
+            
+            <li><a href="#"><img src="imagens/stikers/youtube.png" alt="youtube" width="25px" height="25px"></a></li>
+
+            <li><a href="#"><img src="imagens/stikers/instagram.png" alt="instagram" width="25px" height="25px"></a></li>
+
+        </ul>
+
+        <ul class="outos">
+            <li><img src="imagens/stikers/chamine-de-casa.png" alt="localização" width="15px" height="15px">: Angola/Huambo</li>
+
+            <li>
+                <img src="imagens/stikers/telefone-circular.png" alt="contacto" width="15px" height="15px">: +244 921 082 076
+            </li>
+        </ul>
+    </footer>
+
+
+    
+</body>
+</html>
