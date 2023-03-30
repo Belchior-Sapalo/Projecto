@@ -149,33 +149,21 @@ footer{
     margin-bottom: 10px;
     padding-left: 20px;
     text-align: center;
+    margin: auto;
 }
 
 footer p{
     font-family: var(--conteudo);
     color: white;
     text-align: center;
+    
     font-size: 0.8em;
     
 }
 
-footer ul{
+footer ul.outos {
     list-style: none;
-    text-align: center;
-    
-}
-
-footer ul li{
-    display: inline-block;
-    
-}
-
-footer ul li a{
-    text-align: center;
-    padding: 5px;
-}
-
-footer ul.outos li{
-    display:list-item;
+    padding: 10px;
     font-family: var(--conteudo);
+
 }
