@@ -1,0 +1,179 @@
+/*--------------- 
+    Fontes
+-----------------*/
+
+@font-face{
+    font-family: "titulos";
+    src: url("fontes/idroid.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "corpo";
+    src: url("fontes/WorkSans-VariableFont_wght.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+/*--------------- 
+    Variáveis
+-----------------*/
+
+:root{
+    --cor1: #a9f3fe;
+    --cor2: #75f5fa;
+    --cor3: #00ffff;
+    --cor4: #02c7ce;
+    --cor5: #07595c;
+    --cor6: #001a24;
+
+    --conteudo: "corpo";
+    --destaques: "titulos";
+} 
+
+/*--------------- 
+ Estilos do corpo
+-----------------*/
+
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url("imagens/wallpaper002.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+/*--------------- 
+    Estilos da nav
+-----------------*/
+
+nav{
+    background-image: url("imagens/wallpaper005.jpg");
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: var(--conteudo);
+    font-weight: bold;
+    margin: 5px;
+    border: 0.5px solid transparent;
+    padding: 5px;
+
+}
+
+nav ul li a:hover{
+    color: white;
+    border-radius: 20px;
+    text-shadow: 0px 0px 20px var(--cor3);
+    font-weight: bolder;
+    transition: all 0.2s ease;
+    border-color: var(--cor4);
+    background-color: var(--cor5);
+}
+
+nav article ul li.imagem{
+    position: absolute;
+    right: 4%;
+    top: 10px;
+
+}
+
+/*--------------- 
+  Estilos da main
+-----------------*/
+
+main{
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+main h1.titulo, h2.subtitulo{
+    font-family:var(--conteudo), sans-serif;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    background-image: linear-gradient(to right, var(--cor6), var(--cor4));
+    border-radius: 10px;
+    
+    
+}
+main h2{
+    font-family: var(--conteudo);
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    background-image: linear-gradient(to right, var(--cor4), var(--cor1));
+    border-radius: 10px;
+}
+
+main p{
+    font-family: var(--conteudo), sans-serif;
+    margin: 50px;
+}
+
+
+/*--------------- 
+Estilos do rodapé
+-----------------*/
+
+footer{
+    background-color: #003138;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+footer p{
+    font-family: var(--conteudo);
+    color: white;
+    text-align: center;
+    
+}
+
+footer ul{
+    list-style: none;
+    text-align: center;
+    
+}
+
+footer ul li{
+    display: inline-block;
+    
+}
+
+footer ul li a{
+    text-align: center;
+    padding: 5px;
+}
+
+footer ul.outos li{
+    display:list-item;
+    font-family: var(--conteudo);
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belchior Benilson</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/Bell-icon.png" type="image/x-icon">
+    <style>
+        body{
+            background-image: linear-gradient(to bottom, var(--cor6), var(--cor5));
+        }
+        
+       div.imagem2{
+        text-align: center;
+        width: 200px;
+        height: 300px;
+        margin: auto;
+        border-radius: 200px;
+        padding: 20px;
+        padding-bottom: 0px;
+        border: 1px solid var(--cor3);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+        
+       }
+
+       body table.imagem-home{
+        margin: auto;
+        
+       }
+       
+
+       body table.redes-sociais {
+        width: 10vw;
+        height: 10vh;
+       }
+
+
+       table.redes-sociais a{
+        font-family: var(--conteudo);
+        text-decoration: none;
+        color: white;
+       }
+
+       table.redes-sociais td {
+        border: 0.5px solid var(--cor5);
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+       }
+
+
+       table.redes-sociais tr td:hover{
+            border-color: var(--cor3);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 0px 10px var(--cor2);
+       }
+
+       table.redes-sociais tr td picture.telefone p{
+            display: none;
+
+            
+       }
+
+       table.redes-sociais tr td picture.telefone:hover p{
+        display: inline-block;
+        transition: all 0.3s ease;
+       }
+
+      body table.degrade{
+            position: absolute;
+            left: 500px;
+            border-collapse: collapse;
+       }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="perfil-artista.html">O artista</a></li>
+            <li><a href="projectos.html">Projectos</a></li>
+            <li><a href="letras.html">Letras</a></li>
+            <li><a href="outros.html">Outros</a></li>
+        </ul>
+
+        <article>
+            <ul><li class="imagem"><img src="imagens/Sem título.png" alt="" width=""></li></ul>
+        </article>
+        
+    </nav>
+
+    <table class="imagem-home">
+        <tr>
+            <td>
+                <picture>
+                    <source media="(max-width: 900px)" srcset="imagens/port03.png">
+                    <img src="imagens/port01.png" alt="belchior">
+                    
+                </picture>
+            </td>
+        </tr>
+    </table>
+
+    <table class="redes-sociais">
+        <tr>
+            <td>
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="imagens/stikers/instagram-p.png">
+                        <img src="imagens/stikers/instagram-m.png" alt="instagram">
+                    </picture>
+                </a>
+            </td>
+        
+        </tr>
+        <tr>
+            <td>
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="imagens/stikers/facebook-p.png">
+                        <img src="imagens/stikers/facebook-m.png" alt="facebook">
+                    </picture>
+                </a>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="imagens/stikers/youtube-p.png">
+                        <img src="imagens/stikers/youtube-m.png" alt="youtube">
+                    </picture>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="imagens/stikers/soundcloud-p2.png">
+                        <img src="imagens/stikers/soundcloud-m2.png" alt="soundcloud">
+                    </picture>
+                </a>
+            </td>
+        </tr>
+        
+    </table>
+    
+</body>
+</html>

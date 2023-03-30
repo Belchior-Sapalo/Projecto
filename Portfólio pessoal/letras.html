@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/Bell-icon.png" type="image/x-icon">
+
+    <style>
+
+        /*----------------
+          Estilos da main
+        ------------------*/
+        main{
+            background-image: linear-gradient(to bottom, var(--cor6), var(--cor5));
+        }
+
+        /*----------------
+          Estilos de links
+        ------------------*/
+
+        a{
+            font-family: var(--conteudo);
+            color: white;
+            text-decoration: none;
+        }
+
+        /*-------------------
+         Estilos de tabelas
+        --------------------*/
+
+        table {
+           margin: auto;
+           padding: 20px;
+           
+
+        }
+
+        tr > td{
+            text-align: center;
+            width: 200px;
+            height: 100px;
+            border: 1px solid var(--cor6);
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        tr td:hover{
+            border-radius: 35px;
+            border-color: var(--cor5);
+            transition: all 0.3s ease;
+        }
+
+        tr td a{
+            display: inline-block;
+            font-size: 2vw;
+        }
+
+        tr td a:hover{
+            font-weight: bolder;
+            transition: all 0.3s ease;
+            text-shadow: 0px 0px 20px aqua;
+            border: 0.5px solid white;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.24);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="perfil-artista.html">O artista</a></li>
+            <li><a href="projectos.html">Projectos</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="outros.html">Outros</a></li>
+        </ul>
+
+        <article>
+            <ul><li class="imagem"><img src="imagens/Sem título.png" alt="" width=""></li></ul>
+        </article>
+
+    </nav>
+
+    <main>
+        <table>
+            <tr>
+                <td><a href="mentes-criminosas.html">Mentes Criminosas</a></td>
+                <td><a href="minha-visão.html">Minha Visão</a></td>
+                <td><a href="meu-rap.html">Meu Rap</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="alma-poética.html">Alma Poética</a></td>
+                <td><a href="carta-para-deus.html">Carta para Deus</a></td>
+                <td><a href="r.i.p.html">R.I.P</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="solidão.html">Solidão</a></td>
+                <td><a href="minha-morte.html">Minha Morte</a></td>
+                <td><a href="#">Outras</a></td>
+            </tr>
+        </table>
+    </main>
+    
+    <footer>
+
+            <p>Site criado por &copy; Belchior Sapalo</p>
+            
+            <ul class="outos">
+                <li><img src="imagens/stikers/chamine-de-casa.png" alt="localização" width="15px" height="15px">: Angola/Huambo</li>
+
+                <li>
+                    <img src="imagens/stikers/telefone-circular.png" alt="contacto" width="15px" height="15px">: +244 921 082 076
+                </li>
+            </ul>
+        </footer>
+</body>
+</html>
