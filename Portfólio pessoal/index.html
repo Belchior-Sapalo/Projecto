@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/Bell-icon.png" type="image/x-icon">
     <style>
+
+        @font-face{
+            font-family:"home";
+            src: url("fontes/WorkSans-Italic-VariableFont_wght.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body{
             background-image: linear-gradient(to bottom, var(--cor6), var(--cor5));
         }
         
-       div.imagem2{
+       section.imagem-home{
         text-align: center;
         width: 200px;
         height: 300px;
@@ -27,6 +35,7 @@
 
        body table.imagem-home{
         margin: auto;
+        padding: 50px;
         
        }
        
@@ -57,23 +66,56 @@
             transition: all 0.3s ease;
             box-shadow: 0px 0px 10px var(--cor2);
        }
-
-       table.redes-sociais tr td picture.telefone p{
-            display: none;
-
-            
-       }
-
+    
        table.redes-sociais tr td picture.telefone:hover p{
         display: inline-block;
         transition: all 0.3s ease;
        }
 
-      body table.degrade{
-            position: absolute;
-            left: 500px;
-            border-collapse: collapse;
-       }
+        body ul.saudacao{
+            text-align: center;
+            list-style: none;
+            
+        }
+
+        ul li p{
+            padding: 5px;
+            text-shadow: 0px 0px 10px var(--cor2);
+            font-size: 1.5em;
+        }
+
+        ul.saudacao li{
+            text-align: center;
+            margin: 0px 0px 0px -30px;
+            font-family: var(--conteudo), sans-serif;
+            font-size: 1vw;
+            height: 50px;
+            color: white;
+            
+        }
+
+        body table.guia{
+            padding: 20px;
+            margin: auto;
+        }
+
+        table.guia tr td{
+            border: 1px solid var(--cor5);
+            padding: 20px;
+            border-radius: 8px;
+            font-family: "home";
+            color: white;
+            font-size: 1.5vw;
+        }
+
+        table.guia tr td:hover{
+            border: 0.5px solid var(--cor3);
+            box-shadow: 0px 0px 10px var(--cor2);
+            transition: all 0.3s ease;
+            border-radius: 25px;
+            text-shadow: 0px 0px 5px var(--cor2);
+            font-weight: bolder;
+        }
 
     </style>
 </head>
@@ -92,18 +134,6 @@
         
     </nav>
 
-    <table class="imagem-home">
-        <tr>
-            <td>
-                <picture>
-                    <source media="(max-width: 900px)" srcset="imagens/port03.png">
-                    <img src="imagens/port01.png" alt="belchior">
-                    
-                </picture>
-            </td>
-        </tr>
-    </table>
-
     <table class="redes-sociais">
         <tr>
             <td>
@@ -114,10 +144,7 @@
                     </picture>
                 </a>
             </td>
-        
-        </tr>
-        <tr>
-            <td>
+         <td>
                 <a href="#">
                     <picture>
                         <source media="(max-width: 900px)" srcset="imagens/stikers/facebook-p.png">
@@ -125,9 +152,6 @@
                     </picture>
                 </a>
             </td>
-            
-        </tr>
-        <tr>
             <td>
                 <a href="#">
                     <picture>
@@ -136,8 +160,6 @@
                     </picture>
                 </a>
             </td>
-        </tr>
-        <tr>
             <td>
                 <a href="#">
                     <picture>
@@ -149,6 +171,47 @@
         </tr>
         
     </table>
+    <table class="imagem-home">
+        <tr>
+            <td>
+                <picture>
+                    <img src="imagens/port01.png" alt="belchior">
+                    
+                </picture>
+            </td>
+        </tr>
+    </table>
+ 
+       
+
+        <table class="guia">
+            <tr>
+                <td>Saiba mais sobre mim <br>  em <strong>"O artista"</strong></td>
+
+                 <td>Baixe minhas músicas em <strong>"Projectos"</strong></td>
+            </tr> 
+
+            <tr>
+                <td>Veja letras das músicas em <strong>"Letras"</strong></td>
+
+                <td>
+                    Saiba em quê mais eu trabalho em <strong>"Outros"</strong>
+                </td>
+            </tr>
+        </table>
+       
+        <footer>
+
+            <p>Site criado por &copy; Belchior Sapalo</p>
+    
+            <ul class="outos">
+                <li><img src="imagens/stikers/chamine-de-casa.png" alt="localização" width="15px" height="15px">: Angola/Huambo</li>
+    
+                <li>
+                    <img src="imagens/stikers/telefone-circular.png" alt="contacto" width="15px" height="15px">: +244 921 082 076
+                </li>
+            </ul>
+        </footer>
     
 </body>
 </html>
