@@ -16,9 +16,17 @@
             font-style: normal;
         }
 
+        /*--------------- 
+         Estilos do corpo
+        -----------------*/
+
         body{
             background-image: linear-gradient(to bottom, var(--cor6), var(--cor5));
         }
+
+        /*------------------------- 
+         Estilos da imagem da home
+        --------------------------*/
         
        section.imagem-home{
         text-align: center;
@@ -33,12 +41,17 @@
         
        }
 
+       
+
        body table.imagem-home{
         margin: auto;
         padding: 50px;
         
        }
        
+       /*-------------------------------
+         Estilos do menu redes sociais
+        ------------------------------*/
 
        body table.redes-sociais {
         width: 10vw;
@@ -72,27 +85,9 @@
         transition: all 0.3s ease;
        }
 
-        body ul.saudacao{
-            text-align: center;
-            list-style: none;
-            
-        }
-
-        ul li p{
-            padding: 5px;
-            text-shadow: 0px 0px 10px var(--cor2);
-            font-size: 1.5em;
-        }
-
-        ul.saudacao li{
-            text-align: center;
-            margin: 0px 0px 0px -30px;
-            font-family: var(--conteudo), sans-serif;
-            font-size: 1vw;
-            height: 50px;
-            color: white;
-            
-        }
+       /*----------------------------- 
+         Estilos da guia de navegação
+        -----------------------------*/
 
         body table.guia{
             padding: 20px;
@@ -121,6 +116,7 @@
 </head>
 <body>
     <nav>
+        
         <ul>
             <li><a href="perfil-artista.html">O artista</a></li>
             <li><a href="projectos.html">Projectos</a></li>
@@ -135,6 +131,7 @@
     </nav>
 
     <table class="redes-sociais">
+
         <tr>
             <td>
                 <a href="https://www.instagram.com/benilsonbelchior/" target="_blank">
@@ -171,7 +168,9 @@
         </tr>
         
     </table>
+
     <table class="imagem-home">
+
         <tr>
             <td>
                 <picture>
@@ -180,11 +179,13 @@
                 </picture>
             </td>
         </tr>
+
     </table>
  
        
 
-        <table class="guia">
+    <table class="guia">
+
             <tr>
                 <td>Saiba mais sobre mim <br>  em <strong>"O artista"</strong></td>
 
@@ -198,20 +199,22 @@
                     Saiba em quê mais eu trabalho em <strong>"Outros"</strong>
                 </td>
             </tr>
-        </table>
-       
-        <footer>
 
-            <p>Site criado por &copy; Belchior Sapalo</p>
+    </table>
+       
+    <footer>
+
+        <p>Site criado por &copy; Belchior Sapalo</p>
     
-            <ul class="outos">
-                <li><img src="imagens/stikers/chamine-de-casa.png" alt="localização" width="15px" height="15px">: Angola/Huambo</li>
+        <ul class="outos">
+            <li><img src="imagens/stikers/chamine-de-casa.png" alt="localização" width="15px" height="15px">: Angola/Huambo</li>
     
-                <li>
-                    <img src="imagens/stikers/telefone-circular.png" alt="contacto" width="15px" height="15px">: +244 921 082 076
-                </li>
-            </ul>
-        </footer>
+            <li>
+                <img src="imagens/stikers/telefone-circular.png" alt="contacto" width="15px" height="15px">: +244 921 082 076
+            </li>
+        </ul>
+
+    </footer>
     
 </body>
 </html>

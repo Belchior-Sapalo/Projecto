@@ -145,11 +145,10 @@ footer{
     background-color: #003138;
     border: 1px solid rgba(0, 0, 0, 0.082);
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     padding-left: 20px;
     text-align: center;
-    margin: auto;
 }
 
 footer p{
