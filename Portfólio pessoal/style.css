@@ -38,7 +38,6 @@
 -----------------*/
 
 body{
-    height: 100vh;
     background-color: black;
     background-image: url("imagens/wallpaper002.jpg");
     background-repeat: no-repeat;
@@ -55,10 +54,12 @@ body{
 nav{
     background-image: url("imagens/wallpaper005.jpg");
     border: 1px solid rgba(0, 0, 0, 0.507);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     border-radius: 10px;
     padding-bottom: 10px;
 }
+
+
 
 nav ul{
     list-style: none;
@@ -94,7 +95,7 @@ nav ul li a:hover{
 nav article ul li.imagem{
     position: absolute;
     right: 4%;
-    top: 10px;
+    top: 9px;
     width: 40px;
 }
 
