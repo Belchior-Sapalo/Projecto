@@ -28,6 +28,7 @@ main{
 
 section#telefone{
     position: absolute;
+    margin-top: 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -50,6 +51,8 @@ iframe#tela{
 section#redes-sociais{
     text-align: right;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 section#redes-sociais img{
@@ -64,4 +67,11 @@ section#redes-sociais a img:hover{
     transform: translate(-2px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.641);
     transition: transform 0.3s, border 0.5s;
+}
+
+@media (max-width: 700px){
+    section#redes-sociais{
+        flex-direction: row;
+        justify-content: center;
+    }
 }
