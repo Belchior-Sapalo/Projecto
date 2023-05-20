@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*
+    Configurações gerais
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'corpo';
+    src: url(fontes/Poppins-Light.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'titulos';
+    src: url(fontes/Poppins-Bold.ttf) format(truetype);
+}
+
+:root {
+
+    --cor1: #a9f3fe;
+    --cor2: #75f5fa;
+    --cor3: #00ffff;
+    --cor4: #02c7ce;
+    --cor5: #07595c;
+    --cor6: #001a24;
+
+   --conteudo:'corpo';
+   --destaques:'titulos';
+}
+
+/*
+    Estilos do body
+*/
+
