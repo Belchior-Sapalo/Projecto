@@ -33,6 +33,76 @@
 }
 
 /*
-    Estilos do body
+    Estilos corpoo
 */
 
+body{
+    font-family: var(--conteudo), sans-serif;
+}
+
+/*
+    Estilos docabeçalho/nav
+*/
+
+section.logo h1{
+    color: white;
+    font-size: 2em;
+}
+
+section.logo label{
+    text-shadow: 0px 0px 8px var(--cor3);
+    color: var(--cor3);
+}
+
+ul.links{
+    margin-top: 12px;
+}
+
+ul.links a:hover{
+    text-shadow: 0px 0px 10px var(--cor3);
+    transition: all 0.3s ease;
+    color: var(--cor3);
+}
+
+header{
+    position: relative;
+
+}
+
+nav{
+    position: absolute;
+    width: 100vw;
+    background-color: var(--cor5);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul{
+    list-style: none;
+}
+
+ul >li{
+    display: inline-block;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+section.menu{
+    margin-top: 4px;
+    display: none;
+}
+
+@media (min-width: 300px) and (max-width: 700px){
+    ul.links{
+        visibility: hidden;
+    }
+
+    section.menu{
+        display: block;
+    }
+}
