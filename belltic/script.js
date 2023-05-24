@@ -20,8 +20,6 @@ function screen(){
 
         menu.style.marginTop = '24px'
 
-        
-
         /*Logotipo*/
 
         logo.innerHTML = '<img src="/imagens/logo.png" alt="logo">'
@@ -32,19 +30,13 @@ function screen(){
 
         /*Lista de links*/
 
-        links.style.marginTop= '18px'
-
         links.style.visibility = 'hidden'
-
-        $('.links li>a').css('margin-top', '20px')
 
     }else{
 
         /*menu-bar*/
 
         menu.style.display = 'none'
-
-        menu.style.marginTop = '12px'
         
         $('.menu').attr('src', '/imagens/menu-circlo.png')
 
@@ -52,11 +44,7 @@ function screen(){
 
         logo.innerHTML = 'Bell<label>Tic</label>'
 
-        logo.style.marginLeft = '60px'
-
-        $('.logo').css('margin-top', '10px')
-
-        logo.style.marginBottom = '8px'
+        $('.logo').css('margin-top', '10px').css('margin-bottom', '20px')
 
         /*Liata de links*/
 
@@ -64,11 +52,9 @@ function screen(){
 
         links.style.visibility = 'visible'
 
-        $('.links>li').css('display', 'inline')
+        $('.links>li').css('display', 'inline').css('border', '').css('background-image', '').css('box-shadow', '')
 
-        $('.links li>a').css('padding', '0px').css('backgrounr-color', '')
-
-        $('.links>li').css('border', 'none').css('margin', '0px').css('text-align', 'center').css('background-color', '').css('background-image','').css('box-shadow', '')
+        $('.links li>a').css('padding', '0px')
 
     }
 
@@ -88,16 +74,14 @@ function abrir(){
         $('.menu').attr('src', '/imagens/X-circlo.png')
 
         /*Lista de links*/
-
         links.style.visibility = 'visible'
 
-        $('.links').css('margin', ' 10px 98px').css('text-align', 'top')
+        $('.links').css('margin', ' 10px 98px')
 
-        $('.links>li').css('display', 'block')
-
-        $('.links>li').css('border', 'solid 1px #07595c').css('border-radius', '10px').css('background-image','linear-gradient(to right,#07595c, #001a24)').css('margin-bottom', '10px').css('text-align', 'center').css('box-shadow', '5px 5px 10px #0000006e')
+        $('.links>li').css('display', 'block').css('text-align', 'center').css('border', 'solid 1px #07595c').css('border-radius', '10px').css('background-image','linear-gradient(to right,#07595c, #00000010)').css('margin-bottom', '10px').css('box-shadow', '5px 5px 10px #0000006e')
 
         $('.links li>a').css('padding', '10px')
+
    } else{
 
         /*menu-bar*/
@@ -107,14 +91,6 @@ function abrir(){
         /*Lista de links*/
 
         links.style.visibility = 'hidden'
-
-        $('.links').css('margin', ' 10px 98px')
-
-        $('.links li>a').css('padding', '0px')
-
-        $('.links>li').css('display', 'inline')
-
-        /*Logotipo*/
-
+        
    }
 }
