@@ -14,7 +14,10 @@
 body{
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-image: url(/imagens/pexels-matheus-rocha-2282315.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 main{
