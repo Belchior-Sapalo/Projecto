@@ -91,6 +91,8 @@ function abrir(){
         /*Lista de links*/
 
         links.style.visibility = 'hidden'
-        
+
+        $('.links>li').css('display', 'none')
+
    }
 }
